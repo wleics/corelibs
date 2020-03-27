@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "PRINT_APP_LOGGER", "false"
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "PRINT_APP_LOGGER", "true"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.13.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha02'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.r0adkll:slidableactivity:2.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_bar_height"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--导航栏标题-->
+
+        <TextView
+            android:id="@+id/navigation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/app_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/navigation_title_textsize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--导航栏右侧文字-->
+        <TextView
+            android:id="@+id/navigation_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp"
+            android:textColor="#4d78fa"
+            android:textSize="@dimen/navigation_right_title_textsize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--返回按钮-->
+        <Button
+            android:id="@+id/navigation_back_btn"
+            android:layout_width="@dimen/navigation_back_btn_w"
+            android:layout_height="@dimen/navigation_back_btn_h"
+            android:background="@android:color/transparent"
+            android:text="@string/navigation_back_btn_label"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/navigation_back_btn_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/navigation_left_btn_plus"
+            android:layout_width="@dimen/navigation_back_btn_w"
+            android:layout_height="@dimen/navigation_back_btn_h"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/navigation_back_btn_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/navigation_back_btn_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466"
+            app:srcCompat="@mipmap/img_back" />
+
+        <View
+            android:id="@+id/nav_bottom_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </View>
+
+        <ImageView
+            android:id="@+id/navigation_right_img_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/zr_icon_fenxiang" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone">
+
+    </View>
+</LinearLayout>
