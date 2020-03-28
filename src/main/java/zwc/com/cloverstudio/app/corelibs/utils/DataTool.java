@@ -5,11 +5,8 @@ import java.util.Optional;
 import zwc.com.cloverstudio.app.corelibs.application.CoreApplication;
 
 /**
- * @ClassName:DataTool
- * @功能：文件系统缓存工具
- * @作者：wlei
- * @日期：2020-02-25-15:39
- **/
+ * 文件系统缓存工具
+ */
 public class DataTool {
 
     public static DataTool getInstance() {

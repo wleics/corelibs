@@ -3,11 +3,8 @@ package zwc.com.cloverstudio.app.corelibs.utils;
 import com.google.gson.Gson;
 
 /**
- * @ClassName:JsonTool
- * @功能：
- * @作者：wlei
- * @日期：2020/2/28-12:55 AM
- **/
+ * Gson工具
+ */
 public class GsonTool {
     public static <T> T getObjFromJson(String json, Class<T> classOfT) {
         try {

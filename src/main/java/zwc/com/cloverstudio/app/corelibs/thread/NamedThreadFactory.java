@@ -4,11 +4,8 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @ClassName:NamedThreadFactory
- * @功能：带命名的线程工厂
- * @author：wlei
- * @日期：2020/2/7-2:51 下午
- **/
+ * 带命名的线程工厂
+ */
 public class NamedThreadFactory implements ThreadFactory {
     private static final AtomicInteger poolNumber = new AtomicInteger(1);
     private final ThreadGroup group;

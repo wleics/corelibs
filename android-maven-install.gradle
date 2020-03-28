@@ -1,0 +1,40 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging libraryPackaging
+                groupId publishedGroupId
+                artifactId artifact
+
+                // Add your description here
+                name "corelibs"
+                description "核心框架"
+                url "https://github.com/wleics/corelibs"
+
+                // Set your license
+                licenses {
+                    license {
+                        name licenseName
+                        url licenseUrl
+                    }
+                }
+                developers {
+                    developer {
+                        id "wanglei"
+                        name "wanglei"
+                        email "1003796899@qq.com"
+                    }
+                }
+                scm {
+                    connection "https://github.com/wleics/corelibs"
+                    developerConnection "https://github.com/wleics/corelibs"
+                    url "https://github.com/wleics/corelibs"
+
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ import android.util.Log;
 
 import java.time.LocalDateTime;
 
-import zwc.com.cloverstudio.app.libs2.BuildConfig;
+import zwc.com.cloverstudio.app.corelibs.BuildConfig;
 
 
 /**

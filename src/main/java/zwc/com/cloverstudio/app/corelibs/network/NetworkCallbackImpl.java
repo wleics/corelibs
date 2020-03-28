@@ -7,11 +7,8 @@ import android.net.NetworkCapabilities;
 import zwc.com.cloverstudio.app.corelibs.utils.LogUtils;
 
 /**
- * @ClassName:NetworkCallbackImpl
- * @功能：网络连接状态回调
- * @作者：wlei
- * @日期：2019-11-25-00:22
- **/
+ * 网络连接状态回调
+ */
 public class NetworkCallbackImpl extends ConnectivityManager.NetworkCallback {
     @Override
     public void onAvailable(Network network) {

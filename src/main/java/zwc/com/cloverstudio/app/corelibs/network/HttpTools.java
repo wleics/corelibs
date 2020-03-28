@@ -149,7 +149,7 @@ public class HttpTools {
     }
 
     /**
-     * 执行post请求，以 Map<String, String>作为请求参数
+     * 执行post请求
      *
      * @param url
      * @param params
@@ -192,7 +192,7 @@ public class HttpTools {
     }
 
     /**
-     * 执行post请求，以 Map<String, String>作为请求参数
+     * 执行post请求
      *
      * @param url
      * @param params

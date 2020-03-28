@@ -1,11 +1,8 @@
 package zwc.com.cloverstudio.app.corelibs.consts;
 
 /**
- * @ClassName:CoreConsts
- * @功能：
- * @作者：wlei
- * @日期：2020/3/27-5:25 PM
- **/
+ * 核心常量
+ */
 public interface CoreConsts {
     /**
      * 请求的唯一编号

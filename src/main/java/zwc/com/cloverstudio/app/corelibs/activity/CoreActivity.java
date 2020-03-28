@@ -41,6 +41,7 @@ import java.util.UUID;
 import java.util.function.Consumer;
 
 import butterknife.ButterKnife;
+import zwc.com.cloverstudio.app.corelibs.R;
 import zwc.com.cloverstudio.app.corelibs.application.CoreApplication;
 import zwc.com.cloverstudio.app.corelibs.consts.CoreConsts;
 import zwc.com.cloverstudio.app.corelibs.network.HttpTools;
@@ -51,7 +52,6 @@ import zwc.com.cloverstudio.app.corelibs.utils.JsonTools;
 import zwc.com.cloverstudio.app.corelibs.utils.LogUtils;
 import zwc.com.cloverstudio.app.corelibs.utils.PermissionsTool;
 import zwc.com.cloverstudio.app.corelibs.utils.PreferencesUtils;
-import zwc.com.cloverstudio.app.libs2.R;
 
 /**
  * 基础类
